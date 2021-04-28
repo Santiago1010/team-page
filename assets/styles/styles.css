@@ -1,0 +1,109 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+.sectionTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sectionTitle h1 {
+  min-width: 300px;
+  width: 100%;
+  max-width: 80%;
+  font-family: "Times New Roman";
+}
+
+.sectionTitle .decription {
+  min-width: 300px;
+  width: 100%;
+  max-width: 20%;
+}
+
+.sectionTitle .decription p {
+  font-size: 2rem;
+}
+
+.containerPhotos {
+  position: relative;
+  display: flex;
+  margin: auto;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.containerPhotos .photoBox {
+  min-width: 150px;
+  max-width: 300px;
+  min-height: 300px;
+  max-height: 410px;
+  position: relative;
+  margin: 40px 50px;
+}
+
+.containerPhotos .photoBox:nth-child(1) {
+  margin: 200px 50px;
+}
+
+.containerPhotos .photoBox::before {
+  content: attr(data-name);
+  position: absolute;
+  bottom: -8%;
+  left: 0%;
+  z-index: 100;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.containerPhotos .photoBox::after {
+  content: attr(data-job);
+  position: absolute;
+  right: -35%;
+  top: 18%;
+  z-index: 100;
+  font-size: 2rem;
+  transform: rotate(90deg);
+  text-transform: uppercase;
+  font-family: "Times New Roman";
+}
+
+.containerPhotos .photoBox img {
+  max-width: 300px;
+  max-height: 410px;
+}
+
+@media (max-width: 380px) {
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .sectionTitle .decription p {
+    font-size: 1.4rem;
+  }
+
+}
