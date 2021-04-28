@@ -8,7 +8,7 @@
   <h3>
     <a href="https://www.figma.com/file/F8d1qJsorEdY47N74HLxQ4/team-page-challenge?node-id=0%3A1" target="_BLANK">Demo</a>
     <span> | </span>
-    <a href="https://santiago1010.github.io/404-page-not-found/" target="_BLANK">Solution</a>
+    <a href="https://santiago1010.github.io/team-page/" target="_BLANK">Solution</a>
     <span> | </span>
     <a href="https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U" target="_BLANK">Challenge</a>
   </h3>
@@ -29,7 +29,7 @@
 
 ![screenshot](https://github.com/Santiago1010/team-page/blob/main/assets/images/capture.png)
 
-- You can see my project in <a href="https://santiago1010.github.io/404-page-not-found/" target="_BLANK">this link</a>.
+- You can see my project in <a href="https://santiago1010.github.io/team-page/" target="_BLANK">this link</a>.
 
 ### Built With
 
