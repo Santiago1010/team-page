@@ -9,36 +9,53 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
-  font-size: 6rem;
-}
-
-h2 {
-  font-size: 4rem;
-}
-
-.sectionTitle {
+.containerPhotos{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: auto;
+  padding-top: 4em;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.sectionTitle h1 {
-  min-width: 300px;
+.photoBox {
+  position: relative;
+  width: 250px;
+}
+
+.photoBox img {
+  max-width: 100%;
+}
+
+.photoBox::after {
+  content: attr(data-name);
+  position: absolute;
+  bottom: -12%;
+  left: 0;
+  font-size: 3rem;
   width: 100%;
-  max-width: 80%;
+}
+
+.photoBox::before {
+  content: attr(data-job);
+  position: absolute;
+  right: -58%;
+  top: 31%;
+  font-size: 2.4rem;
+  transform: rotate(90deg);
+  width: 250px;
+  text-transform: uppercase;
   font-family: "Times New Roman";
 }
 
-.sectionTitle .decription {
-  min-width: 300px;
-  width: 100%;
-  max-width: 20%;
+.photoBox:nth-child(even){
+  margin-top:60px;
 }
 
-.sectionTitle .decription p {
-  font-size: 2rem;
+#creater {
+  margin-top: 30px;
+  text-align: center;
 }
 
 @media (max-width: 380px) {
@@ -54,56 +71,32 @@ h2 {
   .sectionTitle .decription p {
     font-size: 1.4rem;
   }
-  
-  .containerPhotos {
-    position: relative;
-    display: flex;
-    margin: auto;
-    max-width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
 
-  .containerPhotos .photoBox {
-    min-width: 150px;
-    max-width: 300px;
-    min-height: 300px;
-    max-height: 410px;
-    position: relative;
-    margin: 40px 50px;
-  }
-
-  .photoBox:nth-child(even){
-    margin-top:200px;
-  }
-
-  .containerPhotos .photoBox::before {
+  .photoBox::after {
     content: attr(data-name);
     position: absolute;
-    bottom: -8%;
-    left: 0%;
-    z-index: 100;
-    font-size: 2rem;
-    font-weight: bold;
+    bottom: -12%;
+    left: 0;
+    font-size: 1.2rem;
+    width: 100%;
   }
 
-  .containerPhotos .photoBox::after {
+  .photoBox::before {
     content: attr(data-job);
     position: absolute;
-    right: -35%;
-    top: 18%;
-    z-index: 100;
-    font-size: 2rem;
+    right: -56%;
+    top: 31%;
+    font-size: 1rem;
     transform: rotate(90deg);
+    width: 100px;
     text-transform: uppercase;
     font-family: "Times New Roman";
   }
 
-  .containerPhotos .photoBox img {
-    max-width: 300px;
-    max-height: 410px;
+  .photoBox {
+    position: relative;
+    width: 100px;
+    margin-bottom: 100px; 
   }
 
 }
@@ -111,7 +104,7 @@ h2 {
 @media (max-width: 768px) {
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   h2 {
@@ -124,18 +117,46 @@ h2 {
 
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 6rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 
   .sectionTitle .decription p {
     font-size: 1.4rem;
+  }
+
+  .sectionTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .sectionTitle h1 {
+    min-width: 300px;
+    width: 100%;
+    max-width: 80%;
+    font-family: "Times New Roman";
+  }
+
+  .sectionTitle .decription {
+    min-width: 300px;
+    width: 100%;
+    max-width: 20%;
+  }
+
+  .sectionTitle .decription p {
+    font-size: 2rem;
+  }
+
+  .photoBox {
+    margin: 5% 9%;
   }
 
 }
