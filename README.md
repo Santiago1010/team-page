@@ -27,7 +27,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/Santiago1010/404-page-not-found/blob/main/assets/images/screen.png)
+![screenshot](https://github.com/Santiago1010/team-page/blob/main/assets/images/capture.png)
 
 - You can see my project in <a href="https://santiago1010.github.io/404-page-not-found/" target="_BLANK">this link</a>.
 
